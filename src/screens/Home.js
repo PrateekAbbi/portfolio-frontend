@@ -1,5 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
+import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
+
 
 import Home from "../components/Home";
 import About from "../components/About";
@@ -8,6 +11,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 
 const HomeScreen = () => {
+
   const [home, setHome] = useState(true);
   const [about, setAbout] = useState(false);
   const [resume, setResume] = useState(false);
@@ -128,14 +132,14 @@ const HomeScreen = () => {
   return (
     <div>
       {/* PRELOADER */}
-      <div className="preloader">
+      {/* <div className="preloader">
         <div className="status">
           <div className="spinner">
             <div className="dot1"></div>
             <div className="dot2"></div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* NAVBAR */}
       <div className="vertical-nav">

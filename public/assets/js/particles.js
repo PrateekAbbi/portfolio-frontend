@@ -1528,9 +1528,23 @@ window.particlesJS.load = function (tag_id, path_config_json, callback) {
   xhr.onreadystatechange = function (data) {
     if (xhr.readyState == 4) {
       if (xhr.status == 200) {
-        console.log(typeof data.currentTarget.response)
-        var params = JSON.parse(data.currentTarget.response);
-        window.particlesJS(tag_id, params);
+        let responseText = data.currentTarget.response;
+        let jsonResponse;
+        try {
+          // Attempt to parse the response as JSON
+          jsonResponse = JSON.parse(responseText);
+          window.particlesJS(tag_id, jsonResponse);
+          // Handle the JSON response
+        } catch (error) {
+          // console.log("Response is not JSON. Error:", error);
+          // Handle the HTML response
+          let parser = new DOMParser();
+          let htmlDocument = parser.parseFromString(responseText, "text/html");
+          window.particlesJS(tag_id, htmlDocument);
+          // Further processing of the HTML document
+        }
+        // var params = JSON.parse(data.currentTarget.response);
+        // window.particlesJS(tag_id, params);
         if (callback) callback();
       } else {
         console.log('Error pJS - XMLHttpRequest status: ' + xhr.status);

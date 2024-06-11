@@ -126,8 +126,8 @@ const Contact = ({
           <div className="col-xl-7 col-lg-12">
             <div
               className="contact-form"
-              // action="https://hasnaanajmi.com/env/ozod/mail.php"
-              // method="post"
+            // action="https://hasnaanajmi.com/env/ozod/mail.php"
+            // method="post"
             >
               <div className="form-group">
                 <input
@@ -163,12 +163,13 @@ const Contact = ({
                 <span className="input-border"></span>
               </div>
               <div className="form-group">
-                <textarea
+                <input
+                  type="text"
                   className="form-control"
                   onChange={(event) => setClientMessage(event.target.value)}
                   value={clientMessage}
                   required
-                ></textarea>
+                />
                 <label htmlFor="message">Your Message</label>
                 <span className="input-border"></span>
               </div>
