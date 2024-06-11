@@ -37,7 +37,7 @@ const Login = () => {
 
   const login = () => {
     axios
-      .post("http://localhost:5000/loginApi/logIn", {
+      .post("http://localhost:9000/loginApi/logIn", {
         username,
         password,
       })
@@ -53,7 +53,7 @@ const Login = () => {
   const resetPassword = () => {
     axios
       .post(
-        "http://localhost:5000/changePasswordApi/changePassword",
+        "http://localhost:9000/changePasswordApi/changePassword",
         { password: newPassword }
       )
       .then((data) => {

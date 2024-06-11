@@ -17,7 +17,7 @@ const Resume = ({ resume, education, experience }) => {
               <div className="education">
                 {education.map((ele) => {
                   return (
-                    <div className="resume-item">
+                    <div className="resume-item" key={ele.title}>
                       <div className="resume-date">
                         {ele.year}
                         <i className="fa fa-graduation-cap"></i>
@@ -35,7 +35,7 @@ const Resume = ({ resume, education, experience }) => {
               <div className="experience">
                 {experience.map((ele) => {
                   return (
-                    <div className="resume-item">
+                    <div className="resume-item" key={ele.title}>
                       <div className="resume-date">
                         {ele.year}
                         <i className="fa fa-suitcase"></i>

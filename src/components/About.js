@@ -87,7 +87,7 @@ const About = ({
         <div className="row">
           {skills.map((skill) => {
             return (
-              <div className="col-xl-3 col-sm-4">
+              <div className="col-xl-3 col-sm-4" key={skill.name}>
                 <div className="box">
                   <div className="chart2">
                     <CircularProgressbarWithChildren

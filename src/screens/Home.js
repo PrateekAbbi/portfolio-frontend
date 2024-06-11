@@ -126,7 +126,7 @@ const HomeScreen = () => {
   };
 
   return (
-    <>
+    <div>
       {/* PRELOADER */}
       <div className="preloader">
         <div className="status">
@@ -155,23 +155,23 @@ const HomeScreen = () => {
                 style={
                   home
                     ? {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#f9c828",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#f9c828",
+                      cursor: "pointer",
+                    }
                     : {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#ffffff",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#ffffff",
+                      cursor: "pointer",
+                    }
                 }
                 onClick={homeTrue}
               >
@@ -184,23 +184,23 @@ const HomeScreen = () => {
                 style={
                   about
                     ? {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#f9c828",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#f9c828",
+                      cursor: "pointer",
+                    }
                     : {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#ffffff",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#ffffff",
+                      cursor: "pointer",
+                    }
                 }
                 onClick={aboutTrue}
               >
@@ -213,23 +213,23 @@ const HomeScreen = () => {
                 style={
                   resume
                     ? {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#f9c828",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#f9c828",
+                      cursor: "pointer",
+                    }
                     : {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#ffffff",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#ffffff",
+                      cursor: "pointer",
+                    }
                 }
                 onClick={resumeTrue}
               >
@@ -242,23 +242,23 @@ const HomeScreen = () => {
                 style={
                   portfolio
                     ? {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#f9c828",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#f9c828",
+                      cursor: "pointer",
+                    }
                     : {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#ffffff",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#ffffff",
+                      cursor: "pointer",
+                    }
                 }
                 onClick={portfolioTrue}
               >
@@ -271,23 +271,23 @@ const HomeScreen = () => {
                 style={
                   contact
                     ? {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#f9c828",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#f9c828",
+                      cursor: "pointer",
+                    }
                     : {
-                        display: "block",
-                        width: "75px",
-                        height: "80px",
-                        lineHeight: "80px",
-                        textAlign: "center",
-                        color: "#ffffff",
-                        cursor: "pointer",
-                      }
+                      display: "block",
+                      width: "75px",
+                      height: "80px",
+                      lineHeight: "80px",
+                      textAlign: "center",
+                      color: "#ffffff",
+                      cursor: "pointer",
+                    }
                 }
                 onClick={contactTrue}
               >
@@ -352,7 +352,7 @@ const HomeScreen = () => {
         <a href="/">PrateekAbbi</a> &copy; 2023
         <i className="fa fa-heart"></i>
       </div>
-    </>
+    </div>
   );
 };
 

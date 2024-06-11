@@ -5,7 +5,7 @@ const Home = ({ home, name, resumeURL }) => {
   return (
     <section className={home === true ? "home  active" : "home "} id="home">
       <div className="container-fluid area-bg">
-        <div id="particles-js"></div>
+        <div id="particles-js" className="particles-js-canvas-el"></div>
         <div className="home-intro d-flex h-100 align-items-center">
           <div className="home-info">
             <h3>Hey, My name is</h3>
@@ -13,13 +13,12 @@ const Home = ({ home, name, resumeURL }) => {
             <p>
               <Typed
                 strings={[
-                  "Web App Developer",
+                  "Software Developer",
                   "Programmer",
-                  "Android App Developer",
                 ]}
                 typeSpeed={80}
                 backSpeed={50}
-                loop={Infinity}
+              // loop={Infinity}
               />
             </p>
             <a

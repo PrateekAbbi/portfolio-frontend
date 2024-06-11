@@ -1,7 +1,6 @@
 import React from "react";
 
 const Portfolio = ({ portfolio, projects }) => {
-  console.log(portfolio, projects);
   return (
     <section
       className={
@@ -17,9 +16,8 @@ const Portfolio = ({ portfolio, projects }) => {
         <div className="portfolio-content">
           <div className="row">
             {projects.map((project) => {
-              console.log(project.imageURL[0]);
               return (
-                <div className="col-xl-4 col-lg-6 col-sm-6">
+                <div className="col-xl-4 col-lg-6 col-sm-6" key={project.title}>
                   <div className="item">
                     <img
                       style={{ height: 224, width: 224 }}

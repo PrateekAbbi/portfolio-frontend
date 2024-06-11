@@ -74,13 +74,13 @@ $(function () {
     });
   }
 
-  if (
-    !progressCheck &&
-    $("#about").scrollTop() >= $(".skills").offset().top + 250
-  ) {
-    skillsPogress();
-    progressCheck = true;
-  }
+  // if (
+  //   !progressCheck &&
+  //   $("#about").scrollTop() >= $(".skills").offset().top + 250
+  // ) {
+  //   skillsPogress();
+  //   progressCheck = true;
+  // }
 
   $("#about").on("scroll", function () {
     if (
