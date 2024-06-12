@@ -1,7 +1,5 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Particles from "react-tsparticles";
-import { loadSlim } from "tsparticles-slim";
 
 
 import Home from "../components/Home";
@@ -32,6 +30,13 @@ const HomeScreen = () => {
   const [education, setEducation] = useState([]);
   const [experience, setExperience] = useState([]);
   const [projects, setProjects] = useState([]);
+
+  const [menuActive, setMenuActive] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuActive(!menuActive);
+  };
+
 
   useEffect(() => {
     axios({
@@ -142,11 +147,11 @@ const HomeScreen = () => {
       </div> */}
 
       {/* NAVBAR */}
-      <div className="vertical-nav">
+      <div className={`${menuActive ? 'vertical-nav menu-active' : 'vertical-nav'}`}>
         <a className="logo" href="/">
           P<span>a</span>
         </a>
-        <button className="toggle-menu">
+        <button className="toggle-menu" onClick={toggleMenu}>
           <span className="bar"></span>
           <span className="bar"></span>
           <span className="bar"></span>
